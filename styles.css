@@ -546,6 +546,11 @@ textarea:focus {
   gap: 16px;
 }
 
+.updates-layout {
+  display: grid;
+  gap: 16px;
+}
+
 .panel {
   border-radius: 8px;
   padding: 18px;
@@ -584,6 +589,143 @@ textarea:focus {
   display: grid;
   gap: 14px;
   align-content: start;
+}
+
+.updates-feed {
+  display: grid;
+  gap: 14px;
+}
+
+.update-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+  display: grid;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.media-picker {
+  display: grid;
+  gap: 10px;
+}
+
+.media-preview {
+  min-height: 150px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  background: rgba(5, 6, 17, 0.42);
+  overflow: hidden;
+}
+
+.media-preview.has-media {
+  border-style: solid;
+}
+
+.media-preview img,
+.media-preview video,
+.update-media {
+  width: 100%;
+  max-height: 420px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
+.media-preview video,
+.update-media:is(video) {
+  background: #050611;
+}
+
+.media-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.update-head,
+.update-author,
+.update-actions,
+.comment-item,
+.comment-form {
+  display: flex;
+  gap: 12px;
+}
+
+.update-head {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.update-author {
+  align-items: flex-start;
+}
+
+.update-author h3,
+.update-author p,
+.update-body,
+.comment-item p,
+.comment-empty {
+  margin: 0;
+}
+
+.update-author p,
+.update-body,
+.comment-item p,
+.comment-empty,
+.update-actions span {
+  color: var(--muted);
+}
+
+.update-link {
+  color: var(--green);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.update-link:hover {
+  text-decoration: underline;
+}
+
+.update-actions {
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 4px;
+  border-top: 1px solid var(--line);
+}
+
+.btn.ghost.liked {
+  color: var(--green);
+  border-color: rgba(81, 250, 170, 0.55);
+  background: rgba(81, 250, 170, 0.13);
+}
+
+.comment-list {
+  display: grid;
+  gap: 10px;
+}
+
+.comment-item {
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(5, 6, 17, 0.42);
+}
+
+.comment-item strong {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.comment-form {
+  align-items: center;
+}
+
+.comment-form input {
+  flex: 1;
 }
 
 .card-top {
